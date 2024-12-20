@@ -1,0 +1,18 @@
+emoji={
+    "😍":"smiling face with heart eyes",
+    "😎":"Smilling face with sunglasses",
+    "😂":"face with tears of joy",
+    "😘":"Face blowing a kiss",
+    "🤣":"Rolling on the floor laughing",
+    "😉":"Winking face",
+    "🎂":"Birthday Cake"
+}
+
+def emoji_to_text(emoji_input):
+    return emoji.get(emoji_input,"Unknown emoji")
+
+print("Welcome to the Emoji Name Generator ")
+emoji_input=input("Enter any Emoji: ")
+
+text_output=emoji_to_text(emoji_input)
+print(f"The meaning of the Emoji is:: {text_output}")
